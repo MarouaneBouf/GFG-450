@@ -31,18 +31,20 @@ arr =[0,1,0,2,2,1]
 x = arr.count(0)
 y = arr.count(1)
 z = arr.count(2)
-L=[]
-
+i=0
 while x>0:
-    L.append(0)
+    arr[i]=0
+    i+=1
     x-=1
 
 while y>0:
-    L.append(1)
+    arr[i]=1
+    i+=1
     y-=1
-
+    
 while z>0:
-    L.append(2)
+    arr[i]=2
+    i+=1
     z-=1
     
-print(L)
+print(arr)
